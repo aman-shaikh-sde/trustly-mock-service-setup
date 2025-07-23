@@ -59,7 +59,7 @@ public class PaymentServiceImpl implements PaymentService {
 		String requestUUID = trustlyProviderRequest.getParams().getUuid();
 
 		boolean isSigValid = true;// TODO this is only for initial testing
-		// boolean isSigValid = serviceHelper.isSignatureValid(trustlyProviderRequest, requestUUID);
+		//boolean isSigValid = serviceHelper.isSignatureValid(trustlyProviderRequest, requestUUID);
 
 		if(!isSigValid) {
 			LogMessage.log(log, " INVALID signature for requestUUID:" + requestUUID);
